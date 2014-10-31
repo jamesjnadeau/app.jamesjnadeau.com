@@ -1,0 +1,18 @@
+application: jamesjnadeau
+version: 1
+runtime: php
+api_version: 1
+threadsafe: true
+
+
+handlers:
+- url: /files
+  static_dir: files
+  application_readable: true
+
+- url: /themes/(.+)/assets/(.+)
+  static_files: themes/\1/assets/\2
+  upload: themes/(.+)/assets/(.+) 
+
+- url: /.*
+  script: index.php
