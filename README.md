@@ -1,4 +1,4 @@
-Pico
+My example webpage that runs an app
 ====
 
 Pico is a stupidly simple, blazing fast, flat file CMS. See http://pico.dev7studios.com for more info.
